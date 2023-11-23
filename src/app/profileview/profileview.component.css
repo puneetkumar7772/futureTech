@@ -1,0 +1,32 @@
+.container
+{
+  margin-top: 3rem;
+
+}
+.sideimage
+{
+  width:500px;
+  height:530px;
+  border-radius: 35px;
+}
+.row1{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.second{
+  margin: auto;
+}
+@media (max-width: 1080px) {
+  .row1 {
+    grid-template-columns: 1fr; /* Stack columns on top of each other for screens <= 768px wide */
+  }
+  .second{
+    margin-top: 2rem;
+  }
+  .sideimage
+{
+  width:300px;
+  height:530px;
+  border-radius: 35px;
+}
+}

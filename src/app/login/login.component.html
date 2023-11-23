@@ -1,0 +1,16 @@
+<div class="body">
+<div class="login-container card">
+  <h2>Login</h2>
+  <form class="login-form"  [formGroup]="loginForm" (ngSubmit)="loginUser()">
+      <label for="email">Email:</label>
+      <input class="form-control" type="text" id="email" name="email" placeholder="Enter your email" autocomplete="off" formControlName="email">
+      <label for="password">Password:</label>
+      <input class="form-control" type="password" id="password" name="password" placeholder="Enter your password" autocomplete="off" formControlName="password">
+      <button type="submit">Login</button>
+      <div class="signup-link">
+      <p>Not registered? <a routerLink="/register">Register</a></p>
+     </div>
+  </form>
+</div>
+</div>
+

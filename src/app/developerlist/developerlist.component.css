@@ -1,0 +1,27 @@
+.container{
+  margin-top: 3rem;
+}
+h3{
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+.body{
+ /* background-color:#fffdd0; */
+padding-bottom: 14rem;
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+}
+th,td{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.btn{
+  text-decoration: none;
+  font-size: 18px;
+  color: blue;
+  font-weight: 400;
+}

@@ -1,0 +1,31 @@
+<div class="body">
+  <div class="login-container card">
+    <h2>Registration</h2>
+    <form class="login-form" [formGroup]="myForm" (ngSubmit)="submitForm()">
+        <label for="firstname">Name:</label>
+        <input class="form-control" type="text" id="firstname" name="firstname" placeholder="Enter your firstname" formControlName="firstname" >
+        <div *ngIf="myForm.get('firstname').touched && myForm.get('firstname').invalid" class="error-message">
+          Name is required.
+        </div>
+        <label for="email" >Email:</label>
+        <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email" formControlName="email">
+        <div *ngIf="myForm.get('email').touched && myForm.get('email').invalid" class="error-message">
+          Email is required.
+         </div>
+        <label for="password">Password:</label>
+        <input class="form-control" type="password" id="password" name="password" placeholder="Enter your password" formControlName="password">
+        <div *ngIf="myForm.get('password').touched && myForm.get('password').invalid" class="error-message">
+          Password is required and must be at least 8 characters
+         </div>
+        <label for="password">Confirm password:</label>
+        <input class="form-control" type="password" id="password" name="password" placeholder="Enter your confirm password" formControlName="confirmedPassword">
+        <div *ngIf="myForm.get('confirmedPassword').touched && myForm.get('confirmedPassword').invalid" class="error-message">
+          Confirm Password is required.
+         </div>
+        <button type="submit">Register</button>
+        <div class="signup-link">
+          <p>If you are alredy registered? <a routerLink="/login">Login</a></p>
+      </div>
+    </form>
+  </div>
+  </div>

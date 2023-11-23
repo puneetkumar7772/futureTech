@@ -1,0 +1,125 @@
+<div class="main">
+  <div class="row1">
+  <div class="col first">
+    <p class="para">Let's chat</p>
+    <p class="para">Tell me about your</p>
+    <p class="para">Project</p>
+    <span class="hed">Let's create Something together</span>
+  </div>
+  <div class="col second">
+    <div class="card">
+      <h3>Send Us a message</h3>
+
+      <form id="contact-form" [formGroup]="contactForm" (ngSubmit)="addContactDetails()">
+        <div class="form-group">
+            <label for="name" class="Label">Name <span class="error">*</span></label>
+            <input type="text" class="form-control" id="name" name="name" formControlName="name">
+        </div>
+        <div class="form-group">
+            <label for="contact"class="Label">Contact Number <span class="error">*</span></label>
+            <input type="text" class="form-control" id="contact" name="contact" formControlName="phonenumber">
+        </div>
+        <div class="form-group">
+            <label for="email" class="Label">Email <span class="error">*</span></label>
+            <input type="email" class="form-control" id="email" name="email" formControlName="email">
+        </div>
+        <div class="form-group">
+            <label for="about-yourself" class="Label">Tell us more about your project<span class="error">*</span></label>
+            <textarea id="about-yourself" class="form-control" name="about-yourself" formControlName="aboutyourself"></textarea>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+     </div>
+  </div>
+  </div></div>
+
+<!-- Footer -->
+<footer style="background-color: rgb(240, 167, 167);" class="text-center text-lg-start  text-muted">
+  <!-- Section: Social media -->
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3" style="padding-top: 30px;">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p class="foocontent">
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <span>
+            <a class="text-reset nav-link" routerLink="/home">Home</a>
+          </span>
+          <span>
+            <a class="text-reset nav-link" routerLink="">Login</a>
+          </span>
+          <span>
+            <a class="text-reset nav-link" routerLink="/list">List</a>
+          </span>
+          <span>
+            <a class="text-reset nav-link" routerLink="/register">Register</a>
+          </span>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a class="text-reset nav-link">Pricing</a>
+          </p>
+          <p>
+            <a class="text-reset nav-link">Settings</a>
+          </p>
+          <p>
+            <a class="text-reset nav-link">Orders</a>
+          </p>
+          <p>
+            <a class="text-reset nav-link">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p class="foocontent"><i class="fas fa-home me-3 "></i> Shanjahanpur, 242001, India</p>
+          <p class="foocontent">
+            <i class="fas fa-envelope me-3"></i>
+            futuretech@example.com
+          </p>
+          <p class="foocontent"><i class="fas fa-phone me-3"></i> +91 8853021098</p>
+          <p class="foocontent"><i class="fas fa-print me-3"></i> +91 9335792497</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: black;">
+     <h3 style="color: darkgray;">@2023 Copyright</h3>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->

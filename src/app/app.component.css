@@ -1,0 +1,22 @@
+.navbar{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color:rgb(122, 122, 240);
+}
+.d-flex{
+  position: relative;
+  right: 20px;
+}
+.logo{
+  width: 80px;
+}
+span{
+  font-size: 25px;
+  color: red;
+  text-align: center;
+}
+.span
+.dropdown-menu{
+  background-color: #ba4141;
+}
+

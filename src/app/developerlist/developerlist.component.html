@@ -1,0 +1,52 @@
+<div class="body">
+  <h3>Our Developer List</h3>
+  <div class="container">
+    <div class="table-responsive"> <!-- Add this div with the 'table-responsive' class -->
+      <table class="table align-middle mb-0 bg-white">
+        <thead class="bg-light">
+          <tr>
+            <th>Name</th>
+            <th>Profile</th>
+            <th>Experience</th>
+            <th>Position</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let value of data">
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">{{value.name}}</p>
+                  <p class="text-muted mb-0">{{value.email}}</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">{{value.profile}}</p>
+              <p class="text-muted mb-0">{{value.currentcompany}}</p>
+            </td>
+            <td>
+              <p class="text-muted mb-0">{{value.experience}}</p>
+            </td>
+            <td>Senior</td>
+            <td>
+              <button type="button" class="btn btn-link btn-sm btn-rounded" data-mdb-ripple-color="dark" (click)="deleteDeveloper(value._id)">
+                Delete
+              </button>
+              <button type="button" class="btn btn-link btn-sm btn-rounded" data-mdb-ripple-color="dark" (click)="viewProfile(value._id)">
+                View Profile
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
